@@ -6,3 +6,6 @@ background: linear-gradient(to right, #9ACE63 0%, #52A483 50%, #1CA3C5 100%);
   text-align: center;
   font-family: "Roboto", monospace;
 }
+drawBall{
+  color: red;
+}
