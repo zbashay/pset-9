@@ -34,7 +34,7 @@ p{
 }
 img{
   border-radius: 10px;
-  border-color: coral;
+  border: 3px solid white;
 }
 .container {
 
