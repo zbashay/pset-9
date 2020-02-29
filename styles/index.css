@@ -88,65 +88,33 @@ img{
   cursor: pointer;
 }
 
-.menu {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.8);
+nav{
+
+  padding-bottom: 20px;
+  text-align: center;
+}
+nav ul{
+  margin: 0;
+}
+nav li{
   display: inline-block;
-  cursor: pointer;
-  pointer-events: none;
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
 }
-
-.menu:hover {
-  pointer-events: all;
+nav a{
+  color: #FFFFFF;
+text-decoration: none;
+font-family: "Major Mono Display", monospace;
+font-size: 20px;
 }
-
-.label {
-  display: inline-block;
-  cursor: pointer;
-  pointer-events: all;
-  padding-right: 60px;
-}
-
-.spacer {
-  display: inline-block;
-  width: 100px;
-  margin-left: 0px;
-  margin-right: 60px;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-}
-
-.spacer:before {
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #ffffff;
-  height: 1px;
-  width: 0%;
-  transition: width 0.25s ease;
-  transition-delay: 0.7s;
-}
-
-.item {
-  position: relative;
-  display: inline-block;
-  margin-right: 30px;
-  top: 10px;
-  opacity: 0;
-  transition: opacity 0.5s ease, top 0.5s ease;
-  transition-delay: 0;
+nav a:hover{
   color: coral;
 }
-
-span {
-  transition: color 0.5s ease;
+header{
+background: #303030;
 }
-
-
 
 .btn3d {
     position: relative;
