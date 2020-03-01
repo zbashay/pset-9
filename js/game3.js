@@ -74,8 +74,6 @@ const winningConditions = [
   [24, 16, 8, 0]
 ];
 
-
-///////////////////// APP STATE (VARIABLES) /////////////////////////
 let board;
 let turn;
 let win;
@@ -83,17 +81,16 @@ let redWins = 0;
 let yellowWins = 0;
 let ties = 0;
 let first;
-///////////////////// CACHED ELEMENT REFERENCES /////////////////////
+
 const dots = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
-///////////////////// EVENT LISTENERS ///////////////////////////////
+
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = playAgain;
 document.getElementById("redFirst").onclick = redFirst;
 document.getElementById("yellowFirst").onclick = yellowFirst;
 
-///////////////////// FUNCTIONS /////////////////////////////////////
 
 function init() {
   board = [
@@ -109,7 +106,6 @@ function init() {
 
   render();
 }
-
 
 function render() {
   board.forEach(function(mark, index) {
@@ -129,7 +125,6 @@ function takeTurn(e) {
     let index = dots.findIndex(function(dot) {
       return dot === e.target;
     });
-
 
     let row1 = index % 7;
 
