@@ -126,7 +126,7 @@ function changeOrder() {
         starter = "X"
     }
 
-    let neww = change.splice(32, 1, starter);
+    let neww = change.splice(16, 1, starter);
     document.getElementById("order-button").innerHTML = neww
 
     render();
