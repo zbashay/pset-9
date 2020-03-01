@@ -9,24 +9,22 @@
     <script defer src="js/game3.js"></script>
 
     <title>Connect Four</title>
-
+    <nav>
+				<header>
+					<ul>
+						<li><a class="current" href="index.html">Home</a></li>
+						<li><a href="game1.html">tic tac toe</a></li>
+						<li><a href="game2.html">brick breaker</a></li>
+						<li><a href="game3.html">connect four</a></li>
+				 </ul>
+				</header>
+			</nav>
   </head>
   <body>
-    <audio id="myAudio">
-      <source src="audio/okok.mp3" type="audio/mpeg">
-    </audio>
-    <ul>
-      <li><a  href="index.html">Home</a></li>
-      <li><a  href="tic-tac-toe.html">Tic-Tac-Toe</a></li>
-      <li><a href="ultimate.html">Ultimate Tic-Tac-Toe</a></li>
-      <li><a class="active" href="connect4.html">Connect Four</a></li>
-    </ul>
 
       <h1>connect four</h1>
 
-
-
-        <h3>Who's going first?</h3>
+        <h3>Click to change who goes first</h3>
         <div class="containerv2 columnv2">
 
 
@@ -35,20 +33,6 @@
           <div class="first" id="yellowFirst"></div>
         </div>
 
-
-        <table class="scoreboard">
-          <tr>
-            <td># of Red Wins:</td>
-            <td># of Ties:</td>
-            <td># Of Yellow Wins:</td>
-          </tr>
-          <tr>
-            <td id="redScore">0</td>
-            <td id="tScore">0</td>
-            <td id="yellowScore">0</td>
-          </tr>
-        </table>
-        <div id="reset-scoreboard">Reset Scoreboard</div>
       <h2 id="turn">Turn: Red</h2>
       </div>
 

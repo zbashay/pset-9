@@ -92,7 +92,7 @@ document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = playAgain;
 document.getElementById("redFirst").onclick = redFirst;
 document.getElementById("yellowFirst").onclick = yellowFirst;
-document.getElementById("reset-scoreboard").onclick = resetScoreboard;
+
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
 function init() {
@@ -221,3 +221,42 @@ function playAgain() {
 function resetScoreboard() {
 
 }
+
+function resetScoreboard() {
+  redWins = 0;
+  yellowWins = 0;
+  ties = 0;
+
+  document.getElementById("redScore").innerHTML = redWins;
+  document.getElementById("tScore").innerHTML = ties;
+  document.getElementById("yellowScore").innerHTML = yellowWins;
+}
+
+function redFirst(){
+  init();
+
+  document.getElementById("turn").innerHTML = "Turn: Red";
+  turn = "Red";
+  first = "Red"
+
+
+}
+
+function yellowFirst(){
+  init();
+
+  document.getElementById("turn").innerHTML = "Turn: Yellow";
+  turn = "Yellow";
+  first = "Yellow"
+
+}
+
+function resetScoreboard() {
+    redWins = 0;
+    yellowWins = 0;
+    ties = 0;
+
+    document.getElementById("redScore").innerHTML = redWins;
+    document.getElementById("tScore").innerHTML = ties;
+    document.getElementById("yellowScore").innerHTML = yellowWins;
+  }
