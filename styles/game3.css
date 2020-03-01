@@ -196,7 +196,8 @@ border-radius: 20px;
   margin: 1%;
   text-align: center;
   width: 456px;
-  padding-left: 50px;
+padding-left: 350px;
+padding-right: 400px;
 }
 
 #reset-button:hover {
